@@ -17,3 +17,6 @@ cgroup_device_acl = [
 nvram = [
 	"/usr/share/ovmf/x64/OVMF_CODE.fd:/usr/share/ovmf/x64/OVMF_VARS.fd"
 ]
+
+==> /etc/mkinitcpio.conf
+MODULES=(vfio_pci vfio vfio_iommu_type1 vfio_virqfd)
